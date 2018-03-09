@@ -1,0 +1,35 @@
+body {
+  color: $white;
+  font-family: $ff-ss;
+  line-height: 1.6;
+  background: $white;
+}
+img{
+
+  max-width: 100%;
+}
+h1 {
+  top: 250px;
+  left: 250px;
+  color: red;
+  line-height: 1;
+  font-size: 3.125rem;
+
+  span {
+    color: $gold;
+    font-family: $ff-ss;
+    display: block;
+    font-size: 5.5rem;
+  }
+}
+h2{
+  font-size: 2rem;
+  color: $dark-gray;
+  line-height: 1;
+
+}
+
+.welcome-middle{
+  width: 500px;
+  height: 20%;
+}

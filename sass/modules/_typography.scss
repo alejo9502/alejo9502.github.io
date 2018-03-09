@@ -4,3 +4,11 @@ $ff-ss: 'PT Sans', sans-serif;
 
 $fw-n: 400;
 $fw-b: 900;
+
+
+@mixin sans-serif($fs, $ls: .07em, $tt:uppercase, $lh:1){
+  font-size: $fs;
+  letter-spacing: $ls;
+  text-transform: $lh;
+  font-family: $ff-ss;
+}
