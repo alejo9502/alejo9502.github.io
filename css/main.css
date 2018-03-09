@@ -329,7 +329,7 @@ h2 {
   height: 20%; }
 
 .welcome {
-  background-image: url(../img/web-design.png);
+  background-image: url(../img/web-design-copy.png);
   background-size: cover;
   background-position: center;
   height: 120vh;
@@ -389,4 +389,23 @@ h2 {
 
 @supports (display: grid) {
   .about-me {
-    display: grid; } }
+    display: grid;
+    background: white;
+    padding: 0em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; }
+    .about-me .about-text {
+      padding-bottom: 200px;
+      color: gray;
+      text-align: justify;
+      padding: 5em; }
+    .about-me h1 {
+      color: gray; }
+      .about-me h1::after {
+        content: '';
+        width: 20%;
+        height: 4px;
+        background: #ee9c2e;
+        display: block;
+        margin: .5em auto 0; } }
