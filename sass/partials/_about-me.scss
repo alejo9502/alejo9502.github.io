@@ -1,7 +1,34 @@
 @supports (display: grid) {
   .about-me {
     display: grid;
+    background: $light-gray;
+    padding: 0em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 
+
+    .about-text{
+      padding-bottom: 200px;
+      color: $gray;
+      text-align: justify;
+      padding: 5em;
+
+    }
+
+    h1{
+      color: $gray;
+      &::after{
+        content: '';
+        width:20%;
+        height: 4px;
+        background: $gold;
+        display: block;
+        margin: .5em auto 0
+
+
+      }
+    }
   }
 
 }
