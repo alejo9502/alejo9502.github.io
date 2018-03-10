@@ -11,9 +11,19 @@ img{
 h1 {
   top: 250px;
   left: 250px;
-  color: red;
+  color: $ligth-blue;
   line-height: 1;
   font-size: 3.125rem;
+  &::after{
+    content: '';
+    width:20%;
+    height: 4px;
+    background: $gold;
+    display: block;
+    margin: .5em auto 0
+
+
+  }
 
   span {
     color: $gold;

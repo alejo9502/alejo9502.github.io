@@ -1,0 +1,41 @@
+.contact {
+  @include container;
+  padding: 5em 0;
+
+  h1{
+    text-align: center;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  display: block;
+  margin-top: 1em;
+  color: $dark-gray;
+}
+input,
+textarea{
+  box-sizing: border-box;
+  display: block;
+  padding: .5em;
+  width: 100%;
+  background: lighten($gray, 43%);
+  border: 1px solid $light-gray;
+  font-size: 1.2rem;
+
+}
+
+.button {
+  display: inline-block;
+  width: 40%;
+  margin-top: 1em;
+  margin-left: auto;
+  background: $ligth-blue;
+  border: none;
+  color: $white;
+  @include sans-serif($fs: 2rem);
+}
