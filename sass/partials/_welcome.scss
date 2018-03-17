@@ -22,7 +22,11 @@ h1{
   span{
     @include sans-serif($fs: 5.5rem);
     display:inline;
-    color: $gold;
+    color: $red;
+
+    @include mq {
+     font-size: 9vw;
+    }
   }
 
   &::before,

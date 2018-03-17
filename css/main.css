@@ -303,6 +303,9 @@ body {
   font-family: "PT Sans", sans-serif;
   line-height: 1.6;
   background: white; }
+  @media (min-width: 50em) {
+    body {
+      font-size: 1.125rem; } }
 
 img {
   max-width: 100%; }
@@ -330,6 +333,9 @@ h2 {
   font-size: 2rem;
   color: rgba(78, 78, 78, 0.98);
   line-height: 1; }
+  @media (min-width: 50em) {
+    h2 {
+      font-size: 3rem; } }
 
 .welcome-middle {
   width: 500px;
@@ -356,7 +362,10 @@ h2 {
       text-transform: 1;
       font-family: "PT Sans", sans-serif;
       display: inline;
-      color: #ee9c2e; }
+      color: #d16363; }
+      @media (min-width: 50em) {
+        .welcome h1 span {
+          font-size: 9vw; } }
     .welcome h1::before, .welcome h1::after {
       content: '';
       display: block;
@@ -406,7 +415,10 @@ h2 {
       padding-bottom: 200px;
       color: gray;
       text-align: justify;
-      padding: 5em; }
+      padding: 5em;
+      border-top: 0em; }
+    .about-me .about-title {
+      border-top: 10em; }
     .about-me h1 {
       color: gray; }
       .about-me h1::after {
@@ -420,7 +432,8 @@ h2 {
 .portfolio {
   text-align: center;
   background: white;
-  padding: 5em 0; }
+  padding: 5em 0;
+  background-color: #d16363; }
 
 .portfolio-items {
   display: flex;
@@ -475,7 +488,7 @@ h2 {
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); }
   .portfolio-item.featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
@@ -485,16 +498,32 @@ h2 {
     display: block; } }
 
 .contact {
-  width: 90%;
+  width: width;
   margin: 0 auto;
-  max-width: 1200;
-  padding: 5em 0; }
+  max-width: 50em;
+  padding: 5em 5em; }
   .contact h1 {
     text-align: center; }
 
 form {
   display: flex;
   flex-direction: column; }
+  @supports (display: grid) {
+    @media (min-width: 50em) {
+      form {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-areas: "name email" "message message" "  .     button"; }
+        form .name {
+          grid-area: name; }
+        form .email {
+          grid-area: email; }
+        form .message {
+          grid-area: message; }
+          form .message textarea {
+            height: 10em; }
+        form .button {
+          grid-area: button; } } }
 
 label {
   display: block;
@@ -513,7 +542,7 @@ textarea {
 
 .button {
   display: inline-block;
-  width: 40%;
+  width: 30%;
   margin-top: 1em;
   margin-left: auto;
   background: #aad6e9;
@@ -535,3 +564,20 @@ footer {
   height: 1px;
   background: white;
   margin-bottom: 4em; }
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important; }
+  .navbar-toggle:hover {
+    background: transparent !important; }
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s; }
+  .navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%; }
+  .navbar-toggle .middle-bar {
+    opacity: 0; }
+  .navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%; }
