@@ -2,7 +2,11 @@
   text-align: center;
   background: $white;
   padding: 5em 0;
-  background-color: $red;
+  background-color: $dark-gray;
+
+  h1{
+    color: $gold;
+  }
 }
 .portfolio-items{
   display: flex;

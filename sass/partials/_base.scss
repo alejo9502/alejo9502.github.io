@@ -15,7 +15,7 @@ img{
 h1 {
   top: 250px;
   left: 250px;
-  color: $ligth-blue;
+  color: $dark-gray;
   line-height: 1;
   font-size: 3.125rem;
   &::after{
@@ -37,7 +37,7 @@ h1 {
   }
 }
 h2{
-  font-size: 2rem;
+  font-size: .5rem;
   color: $dark-gray;
   line-height: 1;
 
@@ -50,4 +50,8 @@ h2{
 .welcome-middle{
   width: 500px;
   height: 20%;
+}
+
+p {
+  color: $white;
 }

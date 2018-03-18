@@ -1,7 +1,7 @@
 @supports (display: grid) {
   .about-me {
     display: grid;
-    background: $light-gray;
+    background: $white;
     padding: 0em;
     text-align: center;
     flex-direction: column;
@@ -34,6 +34,9 @@
 
 
       }
+    }
+    p{
+      color: $gray;
     }
   }
 

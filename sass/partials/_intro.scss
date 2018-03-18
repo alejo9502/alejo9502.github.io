@@ -3,38 +3,84 @@
 
   h2{
 
-    color: $gold;
+    color: $white;
+    font-size: 1.5em;
 
     &::after{
       content: '';
       width:50%;
-      height: 1px;
-      background: $white;
+      height: 4px;
+      background: $accent;
       display: block;
-      margin: 1em auto 0
+      margin: 1em auto 0;
     }
   }
 
   @supports(display: grid){
     display: grid;
-    grid-template-columns: minmax(4em, 1fr) minmax(auto,30em) minmax(4em, 1fr);
+    grid-template-columns: minmax(4em, 1fr) minmax(4em, 1fr) minmax(4em, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding-bottom: 1em;
     }
+
+
 }
 
 
-.intro-middle{
-  background: $dark-blue;
+.intro-middle,
+.intro-left,
+.intro-rigth{
+  background: rgba(122, 122, 122, 0.78);
   padding: 3em;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+
+
+  p{
+    text-align: justify;
+    color: $white;
+    padding: 0em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
 
 }
 
 .intro-left img,
+.intro-middle img,
 .intro-rigth img {
-  object-fit: cover;
-  min-height: 100%;
-  min-width: 100%;
-  display: block;
+   width: 100px;
+   height: 100px;
+
+
 }
+
+
+// @supports (display: grid) {
+//   .intros {
+//    display: grid;
+//    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+//
+//   }
+//
+//   .intro-left,
+//   .intro-rigth,
+//   .intro-middle{
+//     grid-column: 3/ span 1;
+//     grid-row:  3 / span 1;
+//   }
+// }
+
+// .intro-rigth img {
+//   object-fit: none;
+//   min-height: 100%;
+//   min-width: 100%;
+//   display: flex;
+// }
