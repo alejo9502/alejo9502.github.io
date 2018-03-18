@@ -1,5 +1,5 @@
 .intro {
-  display: flex;
+
 
   h2{
 
@@ -10,22 +10,21 @@
       content: '';
       width:50%;
       height: 4px;
-      background: $accent;
+      background: $gold;
       display: block;
       margin: 1em auto 0;
     }
   }
 
   @supports(display: grid){
+
     display: grid;
-    grid-template-columns: minmax(4em, 1fr) minmax(4em, 1fr) minmax(4em, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     padding-bottom: 1em;
     }
 
-
-}
 
 
 .intro-middle,
@@ -59,28 +58,5 @@
    width: 100px;
    height: 100px;
 
-
+  }
 }
-
-
-// @supports (display: grid) {
-//   .intros {
-//    display: grid;
-//    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-//
-//   }
-//
-//   .intro-left,
-//   .intro-rigth,
-//   .intro-middle{
-//     grid-column: 3/ span 1;
-//     grid-row:  3 / span 1;
-//   }
-// }
-
-// .intro-rigth img {
-//   object-fit: none;
-//   min-height: 100%;
-//   min-width: 100%;
-//   display: flex;
-// }
