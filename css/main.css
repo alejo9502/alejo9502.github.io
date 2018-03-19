@@ -589,15 +589,42 @@ textarea {
 
 footer {
   background: rgba(78, 78, 78, 0.98);
-  padding: 5em 0;
+  padding: 2em 0;
   text-align: center; }
 
-.copyright::before {
-  content: '';
-  display: block;
-  height: 1px;
-  background: white;
-  margin-bottom: 4em; }
+.social-icons img {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  padding: .5em; }
+
+.social-icons .linkedin {
+  height: 50px;
+  width: 50px;
+  background-color: #0077B5;
+  border-radius: 3px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center; }
+
+.social-icons .github {
+  height: 50px;
+  width: 50px;
+  background-color: #6e5494;
+  border-radius: 3px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center; }
+
+.social-icons .codepen {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 3px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center; }
 
 nav {
   float: right; }
