@@ -546,7 +546,7 @@ form {
       form {
         display: grid;
         grid-column-gap: 1em;
-        grid-template-areas: "name email" "message message" "  .      button"; }
+        grid-template-areas: "name email" "message message" "  .     button"; }
         form .name {
           grid-area: name; }
         form .email {
@@ -557,7 +557,7 @@ form {
             height: 10em; }
         form .button {
           grid-area: button;
-          display: flex; } } }
+          display: block; } } }
 
 label {
   display: block;
@@ -576,21 +576,29 @@ textarea {
 
 .button {
   display: flex;
-  width: 50%;
-  margin-top: 1em;
+  width: 35%;
+  margin-top: .5em;
   margin-left: auto;
   background: rgba(55, 187, 52, 0.75);
   border: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.07em;
   text-transform: 1;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  border-radius: .5em; }
 
 footer {
   background: rgba(78, 78, 78, 0.98);
   padding: 2em 0;
   text-align: center; }
+
+.copyright::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: white;
+  margin-bottom: 1em; }
 
 .social-icons img {
   height: 30px;

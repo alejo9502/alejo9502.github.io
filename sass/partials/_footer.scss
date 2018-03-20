@@ -6,16 +6,16 @@ footer {
 }
 
 
-// .copyright {
-//
-//   &::before {
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     background: $white;
-//     margin-bottom: 4em;
-//   }
-// }
+.copyright {
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: $white;
+    margin-bottom: 1em;
+  }
+}
 .social-icons{
 
   img {

@@ -21,7 +21,7 @@ form {
     grid-template-areas:
       "name email"
       "message message"
-      "  .      button";
+      "  .     button";
       .name{
         grid-area: name;
       }
@@ -39,7 +39,7 @@ form {
 
       .button {
         grid-area: button;
-        display: flex;
+        display:block;
 
       }
     }
@@ -65,11 +65,12 @@ textarea{
 
 .button {
   display: flex;
-  width: 50%;
-  margin-top: 1em;
+  width: 35%;
+  margin-top: .5em;
   margin-left: auto;
   background: rgba(55, 187, 52, 0.75);
   border: none;
   color: $white;
-  @include sans-serif($fs: 2rem);
+  @include sans-serif($fs: 1.5rem);
+  border-radius: .5em;
 }
